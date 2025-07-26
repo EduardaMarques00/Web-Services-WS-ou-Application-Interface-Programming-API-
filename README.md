@@ -39,9 +39,21 @@ mvn spring-boot:run
 > O servidor inicia em `http://localhost:8080`.
 
 ### 3. Abrir a interface Web
+Abra em um novo terminal o cliente-js
 Abra o arquivo `index.html` no navegador (ou com extensão Live Server no VSCode).
 ```bash
 google-chrome index.html
+```
+Para abrir o cliente-python :
+- Lembre-se de instalar: 
+```bash
+sudo apt install python3-tk
+```
+---
+
+```bash
+cd cliente-python
+python cliente_biblioteca.py
 ```
 ---
 
