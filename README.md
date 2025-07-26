@@ -3,6 +3,10 @@
 Este projeto é parte do **Trabalho 3 da disciplina de Sistemas Distribuídos** e implementa uma aplicação no estilo **cliente-servidor via API REST**, com o servidor em **Java (Spring Boot)** e o cliente em **JavaScript (HTML + Fetch API)**.
 
 ---
+## Autores
+Maria Eduarda Santana Marques
+
+Mauricio Miranda Carneiro
 
 ## 🔧 Tecnologias Usadas
 
