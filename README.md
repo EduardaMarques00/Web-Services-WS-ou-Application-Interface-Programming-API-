@@ -98,3 +98,23 @@ curl -X POST http://localhost:8080/itens \
 - Servidor em **Java Spring Boot**
 - Comunicação entre diferentes linguagens
 - A aplicação segue o modelo cliente-servidor via **Web Services REST**
+
+## 🗄️ Banco de Dados
+Este sistema utiliza banco de dados relacional integrado via Spring Data JPA. A persistência dos dados ocorre automaticamente com base na entidade Item, que é anotada com @Entity.
+
+O banco é gerenciado automaticamente pelo Spring Boot.
+
+A persistência é feita com base na interface ItemRepository, que estende JpaRepository.
+
+A base de dados é configurada no arquivo application.properties ( banco em memória- H2).
+
+Os dados dos itens (livros, revistas, publicações) são salvos com os campos:
+- id (chave primária, gerada automaticamente)
+- titulo
+- autor
+- tipo (livro, revista ou publicacao)
+
+Isso garante que os dados cadastrados via clientes (web ou CLI) fiquem armazenados de forma persistente, podendo ser listados, atualizados ou removidos a qualquer momento.
+
+
+---
