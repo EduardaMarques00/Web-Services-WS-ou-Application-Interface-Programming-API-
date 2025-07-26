@@ -34,13 +34,15 @@ cd servidor-biblioteca
 
 ### 2. Iniciar o servidor Spring Boot
 ```bash
-./mvnw spring-boot:run
+mvn spring-boot:run
 ```
 > O servidor inicia em `http://localhost:8080`.
 
 ### 3. Abrir a interface Web
 Abra o arquivo `index.html` no navegador (ou com extensão Live Server no VSCode).
-
+```bash
+google-chrome index.html
+```
 ---
 
 ## 📌 Endpoints REST
