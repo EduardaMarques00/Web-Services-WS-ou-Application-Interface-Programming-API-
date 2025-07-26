@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biblioteca Interativa</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  <header>
+    <h1>📚 Biblioteca Interativa</h1>
+    <p>Cadastre livros, revistas e publicações com estilo!</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>➕ Novo item</h2>
+      <form id="livroForm">
+        <input type="text" id="titulo" placeholder="Título" required />
+        <input type="text" id="autor" placeholder="Autor" required />
+        <select id="tipo" required>
+          <option value="">Tipo</option>
+          <option value="livro">Livro</option>
+          <option value="revista">Revista</option>
+          <option value="publicacao">Publicação</option>
+        </select>
+        <button type="submit">Cadastrar</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>📄 Itens cadastrados</h2>
+      <div id="livrosContainer" class="livros-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
